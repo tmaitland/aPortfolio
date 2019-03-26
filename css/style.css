@@ -117,7 +117,7 @@ text-decoration: none;
 }
 .left-head {
    z-index: 9999; 
-   background: rgb(214, 214, 223, .75);
+   background: rgb(214, 214, 223);
    height: 100vh; 
    display: flex;
    justify-content: center;
