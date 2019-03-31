@@ -56,42 +56,41 @@
                     <div class="col-6 right-head">
                     </div>
                 </div>
-                <video src="./videos/trees.mp4" autoplay loop class="bg-video">
-
+                <video muted playsinline webkit-playsinline autoplay loop class="bg-video">
+                    <source type="video/mp4" src="./videos/hands-typing.mp4" />
+                    <source type="video/ogg" src="./videos/hands-typing.ogg" />
+                    <source type="video/webm" src="./videos/hands-typing.webm" />
                 </video>
             </div>
         </section>
-        <section class="aboutMe" id="aboutMe">
+        <section class="aboutMe" id="aboutMe" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
             <div class="container-fluid">
-                <div class="row aboutRow">
-                    <div class="col-4 picDeMoi">
-
-                    </div>
-                    <div class="col-8 aboutMePara">
+                    <div class="row aboutRow">
+                        <div class="col-12">
                             <h2 style="font-size: 5rem;">ABOUT ME</h2>
-                            <p>I have spent most of my life with my face in a book, in front of a computer screen, in a
-                                sketchpad--drawing, or in a notebook--writing. Despite this, I have managed to find myself
-                                outdoors to enjoy nature and interact with people.<br><br> I consider myself to be an intellectual
-                                and I enjoy fields of study where the learning possibilities are endless--hence my pursuit
-                                of web development. I am also an empath, and I often strive to ensure that everyone is
-                                realistically content with their current circumstances. I am also willing to help others
-                                resolve any conflicts or fix inefficiencies.</p>
-                                <a href="#mySkills" class="btn btn-primary">Check Out My Skills!</a>
+                        </div>
+                            <div class="col-12 aboutMePara">
+                                    <p>I have spent most of my life with my face in a book, in front of a computer screen, in a
+                                        sketchpad--drawing, or in a notebook--writing. Despite this, I have managed to find myself
+                                        outdoors to enjoy nature and interact with people.<br><br> I consider myself to be an intellectual
+                                        and I enjoy fields of study where the learning possibilities are endless--hence my pursuit
+                                        of web development. I am also an empath, and I often strive to ensure that everyone is
+                                        realistically content with their current circumstances. I am also willing to help others
+                                        resolve any conflicts or fix inefficiencies.</p>
+                                        <a href="#mySkills" class="btn btn-primary">Check Out My Skills!</a>
+                                </div>
+
                     </div>
 
-                </div>
             </div>
         </section>
-        <section class="mySkills" id="mySkills">
+        <section class="mySkills" id="mySkills" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
             <div class="container-fluid">
-
                 <div class="row">
-                    <div class="col-5">
-                        <div class="col-12 mySkills-title">
-                            <h2>My skills</h2>
-                        </div>
-                    </div>
-                    <div class="col-7">
+                  <div class="col-12 mySkills-title">
+                      <h2>My Skills</h2>
+                  </div>
+                    <div class="col-12">
                         <ul class="skills-bar-container">
 
                             <li>
@@ -149,17 +148,55 @@
                 </div>
                 <!---row-->
             </div>
+            <!-- <div class="overlay" style="background-image: linear-gradient(rgb(105,56,92,.5), rgb(51,154,240,.99));"></div> -->
+        </section>
+        <section class="otherWork" id="otherWork">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6 screen">
+
+                  </div>
+                  <div class="col-6 text">
+
+                  </div>
+                </div>
+                <div class="row">
+                   <div class="col-6 text">
+
+                   </div>
+                   <div class="col-6 screen">
+
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="col-6 screen">
+
+                   </div>
+                   <div class="col-6 text">
+
+                   </div>
+                </div>
+            </div>       
+               
+              
         </section>
         <section class="myProjects" id="myProjects">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 myProjects-title">
-                        <h2>My Projects</h2>
-                    </div>
+                <div class="row myProjects-title">
+                     <h2>Recent Projects</h2>
                 </div>
-            </div>
+                <div class="row project-row">
+                  <div class="col-6 proj1"></div>
+                  <div class="col-6 proj2"></div>
+                </div>
+                <div class="row project-row">
+                  <div class="col-6 proj3"></div>
+                  <div class="col-6 proj4"></div>
+                </div>
+            </div>       
+               
         </section>
-        <section class="contactMe" id="contactMe">
+        <section class="contactMe" id="contactMe" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 contactMe-title">
@@ -178,6 +215,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+    <script src="https://tgomilar.github.io/paroller.js/dist/jquery.paroller.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -206,6 +244,9 @@
         multiply++;
 
     });
+</script>
+<script>
+    $('.mySkills').paroller();
 </script>
 
 </html>

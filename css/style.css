@@ -65,28 +65,9 @@ text-decoration: none;
 }
 
 .aboutMe {
-    background: white;
-    height: 100vh;
-    position: relative;
-}
-.aboutRow {
-    text-align: center;
-    margin: auto;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.picDeMoi {
-    background: url(../images/itme.jpg);
-    background-size: cover;
-    height: 100%;
-}
-.aboutMePara {
   background-size: contain;
   background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
-  height: 100%;
+  height: 100vh;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -96,52 +77,120 @@ text-decoration: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.aboutRow {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    
+}
+
+.picDeMoi {
+    background: url(../images/itme.jpg);
+    background-size: cover;
+    height: 100%;
+}
+.cestMoi {
+  padding: 5rem;
+}
+.aboutMePara {
+ 
+}
 .aboutMePara p {
   font-family: 'Roboto', sans-serif!important;
   color: rebeccapurple;
-  padding: 4rem;
+  padding: 1rem 4rem 0rem 4rem;
   text-align: left;
 }
 .btn-primary {
     margin-top: 3rem;
 }
 .mySkills {
-    background: url('../images/trees.jpg');
+  background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
     height: 100vh;
     background-size: cover;
-    background-attachment: fixed;
+   background-repeat: no-repeat;
+}
+.mySkills-title {
+  display: flex;
+  justify-content: center;
+  background: white;
 }
 .mySkills-title h2 {
     font-size: 5rem;
-    color: white;
+    color: black;
     text-transform: uppercase;
-    margin-top: 2rem;
+}
+.otherWork {
+    height: 100vh;
+    background: deepskyblue;
 }
 .myProjects {
-    background: rgb(51,154,240);
-    height: 100vh;
+    height: 100%;
+}
+.myProjects-title {
+  display: flex;
+  justify-content: center;
 }
 .myProjects-title h2 {
     font-size: 5rem;
     text-transform: uppercase;
-    text-align: right;
+    text-align: center;
     margin-top: 2rem; 
-    color: white;
+    color: black;
+}
+.project-row {
+  height: 30rem;
+}
+.proj1{
+  background: url('../images/projects/le-chat-chat.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj2{
+  background: url('../images/projects/apple-fall-game.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj3{
+  background: url('../images/projects/racing-game.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj4{
+  background: url('../images/projects/viduals.png');
+  background-size: cover;
+  background-position: center;
 }
 .contactMe {
-    background: deeppink;
-    height: 100vh;
+  background-size: contain;
+  background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: top;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@-webkit-keyframes fade {
+	100% {background-color: rgba(0,55,255,0.3)}
 }
 .contactMe-title h2 {
     font-size: 5rem;
     text-transform: uppercase;
     text-align: center;
     margin-top: 2rem; 
-    color: white;
+    color: black;
 }
 .left-head {
    z-index: 9999; 
-   background: mediumpurple;   
+   /* background: mediumpurple;    */
    height: 100vh; 
    display: flex;
    justify-content: center;
@@ -157,7 +206,7 @@ text-decoration: none;
     position: relative;
     width: 100%;
     min-width: 300px;
-    top: 65%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -262,6 +311,9 @@ li{
   @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
   @keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
   @keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+
+ 
+
 
 @media (max-width: 992px) {
     .collapse {
