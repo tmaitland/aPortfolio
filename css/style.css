@@ -109,7 +109,7 @@ text-decoration: none;
     margin-top: 3rem;
 }
 .mySkills {
-  background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+  background: white;
     height: 100vh;
     background-size: cover;
    background-repeat: no-repeat;
@@ -219,7 +219,7 @@ li{
     margin-bottom: 10px;
 } 
       .progressbar-title{
-        color: #fff;
+        color: #000;
       }   
         h3{
           display: inline-block;
