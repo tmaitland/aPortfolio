@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Fredericka+the+Great" rel="stylesheet">
-    <title>Toni-Lee Maitland's Portfolio</title>
+    <title>Toni-Lee Maitland | Front End Web Developer</title>
 </head>
 
 <body>
@@ -37,13 +38,18 @@
         <section class="pageHeader">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 left-head">
+                    <div class="col-6 left-head" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                        data-aos-once="false" data-aos-anchor-placement="top-center">
                         <div class="top-head-text">
                             <h1><span>I</span>&nbsp;AM A</h1>
                         </div>
                         <div class="headerText">
                             <h1>Front-End Developer<br>
                             </h1>
+                            <div class="hold-div">
+                                <img src="./images/nice-div.png" alt="text divider for headings" class="top-div" />
+                            </div>
                         </div>
                         <!-- <div class="arrow bounce">
                             <a class="fa fa-arrow-down fa-2x" href="#aboutMe" style="text-decoration: none;"></a>
@@ -63,33 +69,48 @@
                 </video>
             </div>
         </section>
-        <section class="aboutMe" id="aboutMe" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
+        <section class="aboutMe" id="aboutMe" data-paroller-factor="0.3" data-paroller-type="background"
+            data-paroller-direction="vertical">
             <div class="container-fluid">
-                    <div class="row aboutRow">
-                        <div class="col-12">
-                            <h2 style="font-size: 5rem;">ABOUT ME</h2>
+                <div class="row aboutRow">
+                    <div class="col-12" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                        data-aos-once="false">
+                        <h2 style="font-size: 5rem; margin-top: -3rem; text-shadow: 1px 1px 3px black;">ABOUT ME</h2>
+                        <div class="hold-div">
+                            <img src="./images/nice-div.png" alt="text divider for headings" class="text-div"
+                                style="margin-bottom: 0rem;" />
                         </div>
-                            <div class="col-12 aboutMePara">
-                                    <p>I have spent most of my life with my face in a book, in front of a computer screen, in a
-                                        sketchpad--drawing, or in a notebook--writing. Despite this, I have managed to find myself
-                                        outdoors to enjoy nature and interact with people.<br><br> I consider myself to be an intellectual
-                                        and I enjoy fields of study where the learning possibilities are endless--hence my pursuit
-                                        of web development. I am also an empath, and I often strive to ensure that everyone is
-                                        realistically content with their current circumstances. I am also willing to help others
-                                        resolve any conflicts or fix inefficiencies.</p>
-                                        <a href="#mySkills" class="btn btn-primary">Check Out My Skills!</a>
-                                </div>
-
                     </div>
+                    <div class="col-12 aboutMePara" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                        data-aos-once="false">
+                        <p>I have spent most of my life with my face in a book, in front of a computer screen, in a
+                            sketchpad--drawing, or in a notebook--writing. Despite this, I have managed to find myself
+                            outdoors to enjoy nature and interact with people. I consider myself to be an intellectual
+                            and I enjoy fields of study where the learning possibilities are endless--hence my pursuit
+                            of web development. I am also an empath, and I often strive to ensure that everyone is
+                            realistically content with their current circumstances. I am also willing to help others
+                            resolve any conflicts or fix inefficiencies.</p>
+                        <a href="#mySkills" class="btn btn-outline-primary check-btn"
+                            style="position: relative; top: 3rem;">Check Out My Skills Below!</a>
+                    </div>
+
+                </div>
 
             </div>
         </section>
         <section class="mySkills" id="mySkills">
             <div class="container-fluid">
                 <div class="row">
-                  <div class="col-12 mySkills-title">
-                      <h2>My Skills</h2>
-                  </div>
+                    <div class="col-12 mySkills-title" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                        data-aos-once="false">
+                        <h2>My Skills</h2>
+                        <div class="hold-div">
+                            <img src="./images/nice-div.png" alt="text divider for headings" class="text-div" />
+                        </div>
+                    </div>
                     <div class="col-12">
                         <ul class="skills-bar-container">
 
@@ -99,16 +120,16 @@
                                     <span class="percent" id="html-pourcent"></span>
                                 </div>
                                 <div class="bar-container">
-                                    <span class="progressbar progressred" id="progress-html"></span>
+                                    <span class="progressbar progresshtml" id="progress-html"></span>
                                 </div>
                             </li>
                             <li>
                                 <div class="progressbar-title">
-                                    <h3>CSS / SASS</h3>
+                                    <h3>CSS / LESS</h3>
                                     <span class="percent" id="css-pourcent"></span>
                                 </div>
                                 <div class="bar-container">
-                                    <span class="progressbar progressblue" id="progress-css"></span>
+                                    <span class="progressbar progresscss" id="progress-css"></span>
                                 </div>
                             </li>
 
@@ -118,7 +139,35 @@
                                     <span class="percent" id="javascript-pourcent"></span>
                                 </div>
                                 <div class="bar-container">
-                                    <span class="progressbar progresspurple" id="progress-javascript"></span>
+                                    <span class="progressbar progressjs" id="progress-javascript"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progressbar-title">
+                                    <h3>WordPress</h3>
+                                    <span class="percent" id="wordpress-pourcent"></span>
+                                </div>
+                                <div class="bar-container">
+                                    <span class="progressbar progresswp" id="progress-wordpress"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progressbar-title">
+                                    <h3>NodeJS</h3>
+                                    <span class="percent" id="node-pourcent"></span>
+                                </div>
+                                <div class="bar-container">
+                                    <span class="progressbar progressnodejs" id="progress-node"></span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="progressbar-title">
+                                    <h3>MySQL</h3>
+                                    <span class="percent" id="mysql-pourcent"></span>
+                                </div>
+                                <div class="bar-container">
+                                    <span class="progressbar progressmysql" id="progress-mysql"></span>
                                 </div>
                             </li>
 
@@ -128,19 +177,10 @@
                                     <span class="percent" id="php-pourcent"></span>
                                 </div>
                                 <div class="bar-container">
-                                    <span class="progressbar progressorange" id="progress-php"></span>
+                                    <span class="progressbar progressphp" id="progress-php"></span>
                                 </div>
                             </li>
 
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>AngularJS</h3>
-                                    <span class="percent" id="angular-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progressgreen" id="progress-angular"></span>
-                                </div>
-                            </li>
 
                         </ul>
                     </div>
@@ -152,55 +192,136 @@
         </section>
         <section class="otherWork" id="otherWork">
             <div class="container-fluid">
-                <div class="row">
-                  <div class="col-6 screen">
+                <div class="row otherWorkRow">
+                    <div class="col-6 screen1">
 
-                  </div>
-                  <div class="col-6 text">
-
-                  </div>
+                    </div>
+                    <div class="col-6 text">
+                        <h6>Blogger</h6>
+                        <img src="./images/nice-div.png" alt="text divider for headings" class="little-div" />
+                        <!-- headline-->
+                        <p class="other-text">On my blog, I mainly focus on the tech field, but I discuss a variety of
+                            topics, including
+                            education, history, and current events. You should definitely check it out to see what
+                            I'm up to now!</p>
+                        <br>
+                        <!-- About Text 1 -->
+                        <a href="http://tmaitland.techlaunch.online/tonitech/" target="_blank"
+                            class="btn btn-outline-primary check-btn">Check it
+                            out!</a>
+                        <!--read more button-->
+                    </div>
                 </div>
-                <div class="row">
-                   <div class="col-6 text">
+                <div class="row otherWorkRow">
+                    <div class="col-6 text">
+                        <h6>Active on Github</h6>
+                        <img src="./images/nice-div.png" alt="text divider for headings" class="little-div" />
+                        <!-- Headline -->
+                        <p class="other-text">In order to get a good look at how I've progressed from an absolute
+                            beginner until now, check out my
+                            Github! There's quite a few repositories of projects and assignments that are a
+                            good indicator of how passionate I am about learning new ways to problem solve using code.
+                        </p>
+                        <br>
+                        <!-- About Text 2 -->
+                        <a href="https://github.com/tmaitland" target="_blank"
+                            class="btn btn-outline-primary check-btn">Check
+                            it out!</a>
+                        <!--read more button-->
+                    </div>
+                    <div class="col-6 screen2">
 
-                   </div>
-                   <div class="col-6 screen">
-
-                   </div>
+                    </div>
                 </div>
-                <div class="row">
-                   <div class="col-6 screen">
+                <div class="row otherWorkRow">
+                    <div class="col-6 screen3">
 
-                   </div>
-                   <div class="col-6 text">
-
-                   </div>
+                    </div>
+                    <div class="col-6 text">
+                        <h6>Publications</h6>
+                        <img src="./images/nice-div.png" alt="text divider for headings" class="little-div" />
+                        <!-- Headline-->
+                        <p class="other-text">While studying at UF, I got the opportunity to contribute to <em>The Fine
+                                Print</em>, a student-run,
+                            independent publication in Gainesville, Florida. One of the articles I wrote focused on
+                            Nelson
+                            Mandela's passing in 2013 and the other on the office space of one of my favorite
+                            professors. I
+                            even did a few illustrations for them, including <a
+                                href="http://thefineprintmag.org/behind-books-behind-bars-dream-defenders/"
+                                target="_blank">this one.</a></p>
+                        <br>
+                        <!-- About Text 3 -->
+                        <a href="http://thefineprintmag.org/author/toni-lee-maitland/" target="_blank"
+                            class="btn btn-outline-primary check-btn">Check
+                            it out!</a>
+                        <!--read more button-->
+                    </div>
                 </div>
-            </div>       
-               
-              
+            </div>
+
+
         </section>
         <section class="myProjects" id="myProjects">
             <div class="container-fluid">
                 <div class="row myProjects-title">
-                     <h2>Recent Projects</h2>
+                    <h2>Recent Projects</h2>
+                    <div class="hold-div">
+                        <img src="./images/nice-div.png" alt="text divider for headings" class="text-div" />
+                    </div>
                 </div>
                 <div class="row project-row">
-                  <div class="col-6 proj1"></div>
-                  <div class="col-6 proj2"></div>
+                    <div class="col-6 hold-proj">
+                        <div class="card">
+                            <div class="image">
+                                <div class="proj1">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 hold-proj">
+                        <div class="card">
+                            <div class="image">
+                                <div class="proj2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row project-row">
-                  <div class="col-6 proj3"></div>
-                  <div class="col-6 proj4"></div>
+                <div class="row project-row ">
+                    <div class="col-6 hold-proj">
+                        <div class="card">
+                            <div class="image">
+                                <div class="proj3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 hold-proj">
+                        <div class="card">
+                            <div class="image">
+                                <div class="proj4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>       
-               
+            </div>
+
         </section>
-        <section class="contactMe" id="contactMe" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical">
+        <section class="contactMe" id="contactMe" data-paroller-factor="0.3" data-paroller-type="background"
+            data-paroller-direction="vertical">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 contactMe-title">
                         <h2>Contact Me</h2>
+                        <div class="hold-div">
+                            <img src="./images/nice-div.png" alt="text divider for headings" class="text-div" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,25 +331,37 @@
 
 
 
-
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-    <script src="https://tgomilar.github.io/paroller.js/dist/jquery.paroller.js"></script>
+<script src="https://tgomilar.github.io/paroller.js/dist/jquery.paroller.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
     integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
     crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $(window).on('scroll', function (e) {
+        var top = $(window).scrollTop() + $(window).height(),
+            isVisible = top > $('#progress-html, #progress-css, #progress-javascript').offset().top;
+            isVisible = top > $(' #progress-node, #progress-wordpress, #progress-mysql, #progress-php').offset().top;
+
+        $('#progress-html, #progress-css, #progress-javascript').toggleClass('animate', isVisible);
+        $('#progress-node, #progress-wordpress, #progress-mysql, #progress-php').toggleClass('animate', isVisible);
+    });
+</script>
 <script>
     var lang = {
         "html": "100%",
         "css": "90%",
-        "javascript": "70%",
-        "php": "55%",
-        "angular": "65%"
+        "javascript": "75%",
+        "wordpress": "70%",
+        "node": "65%",
+        "mysql": "60%",
+        "php": "55%"
     };
 
     var multiply = 4;
@@ -245,6 +378,10 @@
 
     });
 </script>
+<script>
+    AOS.init();
+</script>
+
 <script>
     $('.mySkills').paroller();
 </script>

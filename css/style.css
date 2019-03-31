@@ -35,28 +35,19 @@ a {
 color:  #2d2d37; 
 text-decoration: none; 
 }
+.hold-div {
+ 
+}
+.top-div {
+  width: 50%;
+}
+.text-div {
+  width: 25%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem; 
+}
 
-.arrow {
-  text-align: center;
-  margin: 8% 0;
-}
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 .bg-video {
     width: 100%;
     position: absolute;
@@ -76,6 +67,8 @@ text-decoration: none;
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 0rem;
+  position: relative;
 }
 .aboutRow {
     text-align: center;
@@ -84,8 +77,7 @@ text-decoration: none;
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    
+    margin-top: -4rem;
 }
 
 .picDeMoi {
@@ -97,36 +89,108 @@ text-decoration: none;
   padding: 5rem;
 }
 .aboutMePara {
- 
+  position: relative;
+  top: 2rem;
 }
 .aboutMePara p {
   font-family: 'Roboto', sans-serif!important;
-  color: rebeccapurple;
+  color: black;
   padding: 1rem 4rem 0rem 4rem;
   text-align: left;
+  column-count: 2;
+  line-height: 2;
 }
 .btn-primary {
     margin-top: 3rem;
 }
 .mySkills {
   background: white;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
    background-repeat: no-repeat;
+   padding-bottom: 4rem;
 }
 .mySkills-title {
   display: flex;
   justify-content: center;
   background: white;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 .mySkills-title h2 {
     font-size: 5rem;
     color: black;
     text-transform: uppercase;
+    text-shadow: 1px 1px 3px black;
 }
 .otherWork {
-    height: 100vh;
-    background: deepskyblue;
+    height: 100%;
+    background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.otherWorkRow {
+  height: 30rem;
+}
+.screen1 {
+background: url('../images/blog.png');
+height: 30rem;
+background-size: cover;
+background-position: center;
+}
+.screen2 {
+  background: url('../images/github-profile.png');
+height: 30rem;
+background-size: cover;
+background-position: center;
+}
+.screen3 {
+  background: url('../images/articlesfp.png');
+height: 30rem;
+background-size: cover;
+background-position: top;
+}
+.text {
+background: transparent; 
+ height: 30rem;
+ display: flex;
+ justify-content: center;
+ align-items: left;
+ flex-direction: column;
+ padding: 6rem;
+}
+.other-text {
+  padding: 4rem 4rem 0rem 4rem;
+  color: black;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+h6 {
+  text-align: center;
+  font-size: 2rem!important;
+  text-shadow: 1px 1px 3px black;
+}
+.little-div {
+  height: auto;
+  width: 30%;
+  margin: auto;
+}
+.check-btn {
+  color: rebeccapurple!important;
+  background-image: none;
+  background-color: white;
+  border-color: rebeccapurple!important;
+  width: 30%;
+  margin: auto;
+  padding: 1rem!important;
+  box-shadow: 2px 2px 5px rgb(112, 112, 112);
+}
+.check-btn:hover {
+  color: white!important;
+  background-color: rebeccapurple!important;
+  border-color: rebeccapurple!important;
+  box-shadow: 2px 1px 8px rgb(112, 112, 112);
 }
 .myProjects {
     height: 100%;
@@ -139,11 +203,31 @@ text-decoration: none;
     font-size: 5rem;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     color: black;
+    text-shadow: 1px 1px 3px black;
 }
 .project-row {
   height: 30rem;
+}
+.proj1, .proj2, .proj3, .proj4 {
+  height: 29rem;
+  transition: 0.5s;
+}
+.proj1:hover, .proj2:hover, .proj3:hover, .proj4:hover {
+  transform: scale(1.15);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.hold-proj {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  border-left: 6px solid white;
+    border-right: 6px solid white;
+    border-bottom: 12px solid white;
 }
 .proj1{
   background: url('../images/projects/le-chat-chat.png');
@@ -178,15 +262,14 @@ text-decoration: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
-@-webkit-keyframes fade {
-	100% {background-color: rgba(0,55,255,0.3)}
-}
+
 .contactMe-title h2 {
     font-size: 5rem;
     text-transform: uppercase;
     text-align: center;
     margin-top: 2rem; 
     color: black;
+    text-shadow: 1px 1px 3px black;
 }
 .left-head {
    z-index: 9999; 
@@ -220,6 +303,7 @@ li{
 } 
       .progressbar-title{
         color: #000;
+        text-shadow: 1px 1px 3px black;
       }   
         h3{
           display: inline-block;
@@ -231,7 +315,7 @@ li{
       
       
       .bar-container{
-        background: #555;
+        background: rgb(112, 112, 112, .15);
         position: relative;
         width: 100%;
         height: 2.5rem;
@@ -252,65 +336,82 @@ li{
           -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
         }
-        #progress-html{
+        #progress-html.animate {
           -webkit-animation-name: progress-html;
           animation-name: progress-html;
           -webkit-animation-delay: .7s;
           animation-delay: .7s;
         }
   
-        #progress-css{
+        #progress-css.animate {
           -webkit-animation-name: progress-css;
           animation-name: progress-css;
           -webkit-animation-delay: .7s*2;
           animation-delay: .7s*2;
         }
   
-        #progress-javascript{
+        #progress-javascript.animate {
           -webkit-animation-name: progress-javascript;
           animation-name: progress-javascript;
           -webkit-animation-delay:.7s*3;
           animation-delay: .7s*3;
         }
-  
-        #progress-php{
-          -webkit-animation-name: progress-php;
-          animation-name: progress-php;
+        #progress-node.animate{
+          -webkit-animation-name: progress-node;
+          animation-name: progress-node;
           -webkit-animation-delay: .7s*4;
           animation-delay: .7s*4;
         }
-  
-        #progress-angular{
-          -webkit-animation-name: progress-angular;
-          animation-name: progress-angular;
-          -webkit-animation-delay: .7s*5;
+         #progress-wordpress.animate{
+          -webkit-animation-name: progress-wordpress;
+          animation-name: progress-wordpress;
+          -webkit-animation-delay:.7s*5;
           animation-delay: .7s*5;
+          }
+        #progress-mysql.animate{
+          -webkit-animation-name: progress-mysql;
+          animation-name: progress-mysql;
+          -webkit-animation-delay: .7s*6;
+          animation-delay: .7s*6;
         }
-    
+        #progress-php.animate{
+          -webkit-animation-name: progress-php;
+          animation-name: progress-php;
+          -webkit-animation-delay: .7s*7;
+          animation-delay: .7s*7;
+        }
   
-  .progressred{background-color:red;}
-  .progressblue{background-color:blue;}
-  .progresspurple{background-color:purple;}
-  .progressorange{background-color:orange;}
-  .progressgreen{background-color:green;}
+  .progresshtml{background-color:rebeccapurple;}
+  .progresscss{background-color:rebeccapurple;}
+  .progressjs{background-color:rebeccapurple;}
+  .progressnodejs{background-color:rebeccapurple;}
+  .progresswp{background-color:rebeccapurple;}
+  .progressmysql{background-color:rebeccapurple;}
+  .progressphp{background-color:rebeccapurple;}
   
   @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
   @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-  @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
+  @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+  @-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 70%;}}
+  @-webkit-keyframes progress-node{0%{width: 0%;} 100%{ width: 65%;}}
+  @-webkit-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 60%;}}
   @-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-  @-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
   
   @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
   @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-  @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
+  @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+  @-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 70%;}}
+  @-moz-keyframes progress-node{0%{width: 0%;} 100%{ width: 65%;}}
+  @-moz-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 60%;}}
   @-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-  @-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
-  
+
   @keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
   @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-  @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
+  @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+  @keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 70%;}}
+  @keyframes progress-node{0%{width: 0%;} 100%{ width: 65%;}}
+  @keyframes progress-mysql{0%{width: 0%;} 100%{ width: 60%;}}
   @keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-  @keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
 
  
 
