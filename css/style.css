@@ -271,6 +271,40 @@ h6 {
     color: black;
     text-shadow: 1px 1px 3px black;
 }
+.contact-text {
+  padding: 0rem 6rem;
+  line-height: 2;
+  font-size: 1.1rem;
+}
+.hold-contact-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hold-contact-form {
+
+}
+#c-0-5 {  /*first-name*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-1-5 {  /*last-name*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-3-4 {  /*email-entry*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-4-3 {  /*phone-entry*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-5-2 { /*text-area*/
+  border: 1px solid rebeccapurple;
+
+}
+
 .left-head {
    z-index: 9999; 
    /* background: mediumpurple;    */
@@ -281,10 +315,7 @@ h6 {
    flex-direction: column;
 }
 
-.right-head {
 
-
-}
 .skills-bar-container{
     position: relative;
     width: 100%;
