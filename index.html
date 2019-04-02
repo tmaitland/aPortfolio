@@ -17,24 +17,41 @@
 
 <body>
     <div class="page portfolio">
-        <!-- <header class="holdNav">
-            <nav class="navbar navbar-expand-lg">
-                <a href="#" class="navbar-brand">Toni's Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                </button> 
-
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#">About Me</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#">Skills</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#">Projects</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#">Contact Me</a></li>
-                    </ul>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="menu-wrap">
+                            <nav class="menu">
+                                <!-- Menu Links -->
+                                <div class="icon-list">
+                                    <a href="index.html#home">
+                                        <i class="fa fa-fw fa-home"></i>
+                                        <span>Home</span>
+                                    </a>
+                                    <a href="index.html#about">
+                                        <i class="fa fa-fw fa-quote-left"></i>
+                                        <span>About</span>
+                                    </a>
+                                    <a href="index.html#service">
+                                        <i class="fa fa-fw fa-globe"></i>
+                                        <span>Service</span>
+                                    </a>
+                                    <a href="index.html#portfolio">
+                                        <i class="fa fa-fw fa-picture-o"></i>
+                                        <span>Portfolio</span>
+                                    </a>
+                                    <!-- <a href="index.html#blog"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a> -->
+                                    <a href="index.html#contact">
+                                        <i class="fa fa-fw fa-envelope-o"></i>
+                                        <span>Contact</span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                        <button class="menu-button" id="open-button"></button>
+                        <!-- menu button -->
+                    </div>
+                    <!--/row-->
                 </div>
-            </nav>
-        </header> -->
         <section class="pageHeader">
             <div class="container-fluid">
                 <div class="row">
@@ -73,7 +90,7 @@
             data-paroller-direction="vertical">
             <div class="container-fluid">
                 <div class="row aboutRow">
-                    <div class="col-12" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-12" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                         data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                         data-aos-once="false">
                         <h2 style="font-size: 5rem; margin-top: -3rem; text-shadow: 1px 1px 3px black;">ABOUT ME</h2>
@@ -82,7 +99,7 @@
                                 style="margin-bottom: 0rem;" />
                         </div>
                     </div>
-                    <div class="col-12 aboutMePara" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-12 aboutMePara" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                         data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                         data-aos-once="false">
                         <p>I have spent most of my life with my face in a book, in front of a computer screen, in a
@@ -103,7 +120,7 @@
         <section class="mySkills" id="mySkills">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 mySkills-title" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-12 mySkills-title" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                         data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                         data-aos-once="false">
                         <h2>My Skills</h2>
@@ -111,79 +128,84 @@
                             <img src="./images/nice-div.png" alt="text divider for headings" class="text-div" />
                         </div>
                     </div>
-                    <div class="col-12">
-                        <ul class="skills-bar-container">
-
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>HTML5</h3>
-                                    <span class="percent" id="html-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progresshtml" id="progress-html"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>CSS / LESS</h3>
-                                    <span class="percent" id="css-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progresscss" id="progress-css"></span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>JavaScript / jQuery</h3>
-                                    <span class="percent" id="javascript-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progressjs" id="progress-javascript"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>WordPress</h3>
-                                    <span class="percent" id="wordpress-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progresswp" id="progress-wordpress"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>NodeJS</h3>
-                                    <span class="percent" id="node-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progressnodejs" id="progress-node"></span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>MySQL</h3>
-                                    <span class="percent" id="mysql-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progressmysql" id="progress-mysql"></span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="progressbar-title">
-                                    <h3>PHP</h3>
-                                    <span class="percent" id="php-pourcent"></span>
-                                </div>
-                                <div class="bar-container">
-                                    <span class="progressbar progressphp" id="progress-php"></span>
-                                </div>
-                            </li>
-
-
-                        </ul>
-                    </div>
+                        <div class="col-lg-6 col-md-12">
+                            <ul class="skills-bar-container">
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>HTML5</h3>
+                                            <span class="percent" id="html-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progresshtml" id="progress-html"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>CSS / LESS</h3>
+                                            <span class="percent" id="css-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progresscss" id="progress-css"></span>
+                                        </div>
+                                    </li>
+        
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>JavaScript / jQuery</h3>
+                                            <span class="percent" id="javascript-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progressjs" id="progress-javascript"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>WordPress</h3>
+                                            <span class="percent" id="wordpress-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progresswp" id="progress-wordpress"></span>
+                                        </div>
+                                    </li>
+                                </ul>    
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <ul class="skills-bar-container">
+                                    <li>
+                                            <div class="progressbar-title">
+                                                <h3>NodeJS</h3>
+                                                <span class="percent" id="node-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progressnodejs" id="progress-node"></span>
+                                            </div>
+                                        </li>
+            
+                                        <li>
+                                            <div class="progressbar-title">
+                                                <h3>MySQL</h3>
+                                                <span class="percent" id="mysql-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progressmysql" id="progress-mysql"></span>
+                                            </div>
+                                        </li>
+            
+                                        <li>
+                                            <div class="progressbar-title">
+                                                <h3>PHP</h3>
+                                                <span class="percent" id="php-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progressphp" id="progress-php"></span>
+                                            </div>
+                                        </li>
+            
+                                </ul>
+                         </div>
+                       
+                           
+                    
                     <!---col-7-->
                 </div>
                 <!---row-->
@@ -193,12 +215,12 @@
         <section class="otherWork" id="otherWork">
             <div class="container-fluid">
                 <div class="row otherWorkRow">
-                    <div class="col-6 screen1" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-6 col-md-12 screen1" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
                     data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                     data-aos-once="false">
 
                     </div>
-                    <div class="col-6 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-6 col-md-12 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                     data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                     data-aos-once="false">
                         <h6>Blogger</h6>
@@ -217,7 +239,7 @@
                     </div>
                 </div>
                 <div class="row otherWorkRow">
-                    <div class="col-6 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-6 col-md-12 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                     data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                     data-aos-once="false">
                         <h6>Active on Github</h6>
@@ -235,19 +257,19 @@
                             it out!</a>
                         <!--read more button-->
                     </div>
-                    <div class="col-6 screen2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-6 col-md-12 screen2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
                     data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                     data-aos-once="false">
 
                     </div>
                 </div>
                 <div class="row otherWorkRow">
-                    <div class="col-6 screen3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-6 col-md-12 screen3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
                     data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                     data-aos-once="false">
 
                     </div>
-                    <div class="col-6 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                    <div class="col-lg-6 col-md-12 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                     data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                     data-aos-once="false">
                         <h6>Publications</h6>
@@ -287,47 +309,91 @@
                 <div class="row project-row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
                 data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                 data-aos-once="false">
-                    <div class="col-6 hold-proj">
+                   <div class="col-lg-3 col-md-12 hold-proj">
+                     <a href="http://tmaitland.techlaunch.online/projects/le-chat-chat/public/index.html" target="_blank">
                         <div class="card">
                             <div class="image">
                                 <div class="proj1">
 
                                 </div>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
-                    <div class="col-6 hold-proj">
+                    <div class="col-lg-3 col-md-12 hold-proj">
+                        <a href="http://tmaitland.techlaunch.online/projects/apple-pick-game/index.html" target="_blank">
                         <div class="card">
                             <div class="image">
                                 <div class="proj2">
 
                                 </div>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
-                </div>
-                <div class="row project-row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
-                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                data-aos-once="false">
-                    <div class="col-6 hold-proj">
+                    <div class="col-lg-3 col-md-12 hold-proj">
+                        <a href="http://tmaitland.techlaunch.online/projects/bird-race-game/" target="_blank">
                         <div class="card">
                             <div class="image">
                                 <div class="proj3">
 
                                 </div>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
-                    <div class="col-6 hold-proj">
+                    <div class="col-lg-3 col-md-12 hold-proj">
+                        <a href="http://tmaitland.techlaunch.online/projects/video/video.html" target="_blank">
                         <div class="card">
                             <div class="image">
                                 <div class="proj4">
 
                                 </div>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
+                <!-- <div class="row project-row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-once="false">
+                    <div class="col-lg-3 col-md-12 hold-proj">
+                        <a href="http://tmaitland.techlaunch.online/projects/bird-race-game/" target="_blank">
+                            <div class="card">
+                            <div class="image">
+                                <div class="proj5">
+
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-3 col-md-12 hold-proj">
+                      <a href="http://tmaitland.techlaunch.online/projects/video/video.html" target="_blank">
+                        <div class="card">
+                            <div class="image">
+                                <div class="proj6">
+
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-3 col-md-12 hold-proj">
+                      <a href="http://tmaitland.techlaunch.online/projects/video/video.html" target="_blank">
+                        <div class="card">
+                            <div class="image">
+                                <div class="proj7">
+
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-3 col-md-12 hold-proj">
+                      <a href="http://tmaitland.techlaunch.online/projects/video/video.html" target="_blank">
+                        <div class="card">
+                            <div class="image">
+                                <div class="proj8">
+
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                </div> -->
             </div>
 
         </section>
@@ -348,13 +414,15 @@
                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                        data-aos-once="false">
                             <p class="contact-text">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti praesentium
-                                    dignissimos odit quidem? Voluptate laudantium soluta adipisci vero consequatur!
-                                    Molestias aperiam temporibus quisquam dolorem. Qui nihil asperiores voluptatem
-                                    accusantium laborum?
+                                    Please don't hesitate to send me a message if you want me work on a project, if you have any questions or comments, or if you just want to say hello.
+                                    You can contact me by sending me a message via the form to the right, or contact me via the Social Media links to the right.
+                                    I look forward to hearing from you! 
                                 </p> 
                                 <div class="social-media">
-
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <i class="fas fa-envelope"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-github"></i>
                                 </div> 
                        </div>
                        <div class="col-6 hold-contact-form">
@@ -364,7 +432,14 @@
             </div>
         </section>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row footer-row">
+                 &copy; 2019 - All Rights Reserved - Designed and Developed by Toni-Lee Maitland
+            </div>
 
+        </div>
+    </footer>
 
 
 
