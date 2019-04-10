@@ -16,44 +16,40 @@
 </head>
 
 <body>
+        <div class="mobile-menu-trigger">
+            <span style="font-size: 1.2rem; position: relative; top: 1rem; color: white;"><i class="fas fa-bars"></i>&nbsp;&nbsp;MENU</span>
+        </div>
+                            
+                            <aside id="mobile-menu">
+                                <nav id="mobile-first-nav">		
+                                    <div class="close-menu">
+                                        <p><i class="fas fa-times"></i></p>
+                                    </div>
+                                    
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" data-page-class="home" href="https://www.floridabreastcancer.org"><i class="fa fa-home"></i><span class="link-name">Home</span> <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://www.floridabreastcancer.org/our-core-purpose"><i class="fa fa-leaf"></i><span class="link-name">Our Core Purpose</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://www.floridabreastcancer.org/our-programs"><i class="fa fa-heart"></i><span class="link-name">Our Programs</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://www.floridabreastcancer.org/about-us"><i class="fa fa-ribbon"></i><span class="link-name">About Us</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="https://www.floridabreastcancer.org/support-resources"><i class="fa fa-hands-helping"></i><span class="link-name">Support Resources</span></a>
+                                        </li>
+                                    </ul>
+                                  
+                                    
+                                
+                        </nav>
+                    </aside>	
+
     <div class="page portfolio">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
-                      </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </nav>
-                </div>
         <section class="pageHeader">
             <div class="container-fluid">
                 <div class="row">
@@ -421,10 +417,10 @@
                                     I look forward to hearing from you! 
                                 </p> 
                                 <div class="social-media">
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <i class="fas fa-envelope"></i>
-                                        <i class="fab fa-instagram"></i>
-                                        <i class="fab fa-github"></i>
+                                        <i onclick="openSocialMedia('https://www.linkedin.com/in/toni-lee-maitland-5b5703b2/')" class="fab fa-linkedin-in"></i>
+                                        <i onclick="openSocialMedia('https://mail.google.com/')" class="fas fa-envelope"></i>
+                                        <i onclick="openSocialMedia('https://www.instagram.com/josefinebaeker/')" class="fab fa-instagram"></i>
+                                        <i onclick="openSocialMedia('https://github.com/tmaitland')" class="fab fa-github"></i>
                                 </div> 
                        </div>
                        <div class="col-6 hold-contact-form">
@@ -463,10 +459,10 @@
     $(window).on('scroll', function (e) {
         var top = $(window).scrollTop() + $(window).height(),
             isVisible = top > $('#progress-html, #progress-css, #progress-javascript').offset().top;
-        isVisible = top > $(' #progress-node, #progress-wordpress, #progress-mysql, #progress-php').offset().top;
+        isVisible = top > $(' #progress-ai, #progress-wordpress, #progress-mysql, #progress-php').offset().top;
 
         $('#progress-html, #progress-css, #progress-javascript').toggleClass('animate', isVisible);
-        $('#progress-node, #progress-wordpress, #progress-mysql, #progress-php').toggleClass('animate', isVisible);
+        $('#progress-ai, #progress-wordpress, #progress-mysql, #progress-php').toggleClass('animate', isVisible);
     });
 </script>
 <script>
@@ -476,8 +472,8 @@
         "javascript": "75%",
         "wordpress": "70%",
         "ai": "70%",
-        "mysql": "60%",
-        "php": "55%"
+        "mysql": "65%",
+        "php": "60%"
     };
 
     var multiply = 4;
@@ -497,9 +493,22 @@
 <script>
     AOS.init();
 </script>
-
 <script>
-    $('.mySkills').paroller();
-</script>
-
+        $(document).ready(function(){
+               $('.mobile-menu-trigger').click(function(){
+                       $("#mobile-menu").css("left", "0%");
+                   });
+               $('.close-menu').click(function(){
+                       $("#mobile-menu").css("left", "100%");
+                   });
+   
+        })
+     </script>
+     <script>
+     
+		function openSocialMedia(url) {
+			var win = window.open(url, '_blank');
+			win.focus();
+		}
+     </script>
 </html>
