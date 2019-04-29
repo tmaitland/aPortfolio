@@ -17,7 +17,7 @@
 
 <body>
         <div class="mobile-menu-trigger">
-            <span style="font-size: 1.2rem; position: relative; top: 1rem; color: white;"><i class="fas fa-bars"></i>&nbsp;&nbsp;MENU</span>
+            <span style="font-size: 1.2rem; position: fixed; top: 1rem; color: white; background: rgba(0, 0, 0, 0.25); padding: 1rem; margin-top: 0.25rem;"><i class="fas fa-bars"></i>&nbsp;&nbsp;MENU</span>
         </div>
                             
                             <aside id="mobile-menu">
@@ -28,19 +28,22 @@
                                     
                                     <ul class="navbar-nav">
                                         <li class="nav-item active">
-                                            <a class="nav-link" data-page-class="home" href="https://www.floridabreastcancer.org"><i class="fa fa-home"></i><span class="link-name">Home</span> <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link" data-page-class="home" href="#top"><i class="fa fa-home"></i><span class="link-name">Home</span> <span class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://www.floridabreastcancer.org/our-core-purpose"><i class="fa fa-leaf"></i><span class="link-name">Our Core Purpose</span></a>
+                                            <a class="nav-link" href="#aboutMe"><i class="fa fa-leaf"></i><span class="link-name">About Me</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://www.floridabreastcancer.org/our-programs"><i class="fa fa-heart"></i><span class="link-name">Our Programs</span></a>
+                                            <a class="nav-link" href="#mySkills"><i class="fa fa-heart"></i><span class="link-name">My Skills</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://www.floridabreastcancer.org/about-us"><i class="fa fa-ribbon"></i><span class="link-name">About Us</span></a>
+                                            <a class="nav-link" href="#otherWork"><i class="fa fa-ribbon"></i><span class="link-name">My Work</span></a>
                                         </li>
                                         <li class="nav-item">
-                                                <a class="nav-link" href="https://www.floridabreastcancer.org/support-resources"><i class="fa fa-hands-helping"></i><span class="link-name">Support Resources</span></a>
+                                                <a class="nav-link" href="#myProjects"><i class="fa fa-hands-helping"></i><span class="link-name">Recent Projects</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#contactMe"><i class="fa fa-hands-helping"></i><span class="link-name">Contact Me</span></a>
                                         </li>
                                     </ul>
                                   
@@ -50,7 +53,7 @@
                     </aside>	
 
     <div class="page portfolio">
-        <section class="pageHeader">
+        <section class="pageHeader" id="top">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-6 left-head" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
@@ -501,6 +504,9 @@
                $('.close-menu').click(function(){
                        $("#mobile-menu").css("left", "100%");
                    });
+               $('.nav-item').click(function(){
+                       $("#mobile-menu").css("left", "100%");
+               })   
    
         })
      </script>
