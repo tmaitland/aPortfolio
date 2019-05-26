@@ -13,26 +13,67 @@ p {
   background-color: #fafafa;
   padding: 0rem 1rem 0rem 0rem;
   width: 100%;
-  height: auto;
+  height: 100%;
   position: fixed;
   left: 100%;
   transition: 1s;
   z-index: 999999;
   overflow-x: hidden;
   box-shadow: 1px 2px 27px black;
-  border-left: 5px solid deeppink;
+  border-left: 5px solid rebeccapurple;
+  border-right: 5px solid rebeccapurple;
+}
+.navbar-nav {
+  background: aliceblue;
+  padding: 0rem 3rem;
 }
 #mobile-first-nav {
   padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
 }
 #mobile-first-nav .nav-link {
   display: block;
-  color: rgb(236,4,134);
-transition: .3s;
+    color: rebeccapurple;
+    transition: .3s;
+    font-family: 'Fredericka the Great', cursive!important;
+    text-shadow: 1px 1px 3px rgb(0,0,0,.5);
+    font-size: 2rem;
 }
-#mobile-first-nav .nav-link:hover {
-  color: rgb(13,75,113);
+ #mobile-first-nav .nav-link:hover {
+  text-shadow: 1px 1px 6px rgb(0,0,0,.85);
+  position: relative;
+  top: -2px;
+  color: mediumorchid;
   transition: .3s;
+} 
+/* #mobile-first-nav .nav-link:hover:after {
+  
+  content: url("../images/hov-div.png");
+  display: block;
+  transition: .3s;
+} */
+
+.close-menu {
+  color: rebeccapurple;
+  width: 100%;
+  transition: .3s;
+  text-shadow: 1px 1px 3px rgb(0,0,0,.5);
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+  text-align: right;
+}
+.close-menu:hover {
+  text-shadow: 1px 1px 6px rgb(0,0,0,.85);
+  position: relative;
+  color: mediumorchid;
+  transition: .3s;
+}
+.fa-times {
+  font-size: 2rem;
 }
 .link-name {
   padding-left: 5rem;
@@ -338,6 +379,9 @@ h6 {
 }
 .social-media {
   margin-right: 3rem;
+}
+.fa-linkedin-in, .fa-envelope, .fa-github {
+  cursor: pointer;
 }
 .hold-contact-form {
 
