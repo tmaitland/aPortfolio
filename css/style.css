@@ -25,7 +25,7 @@ p {
 }
 .navbar-nav {
   background: aliceblue;
-  padding: 0rem 3rem;
+  padding: 0rem 3rem!important;
 }
 #mobile-first-nav {
   padding-left: 1rem;
