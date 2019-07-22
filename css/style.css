@@ -288,7 +288,7 @@ h6 {
   box-shadow: 2px 1px 8px rgb(112, 112, 112);
 }
 .myProjects {
-    height: 100%;
+    height: 100vh;
 }
 .myProjects-title {
   display: flex;
@@ -345,24 +345,24 @@ h6 {
   background-position: center;
 }
 .proj5{
-  background: url('../images/projects/le-chat-chat.png');
+  background: url('../images/projects/whack-the-mole.png');
   background-size: cover;
   background-position: center;
 }
 .proj6{
-  background: url('../images/projects/apple-fall-game.png');
+  background: url('../images/projects/rossyachtsales.png');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .proj7{
-  background: url('../images/projects/racing-game.png');
+  background: url('../images/projects/why-list-or-buy.png');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .proj8{
-  background: url('../images/projects/viduals.png');
+  background: url('../images/projects/miasf-org-join.png');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .contactMe {
   background-size: contain;
@@ -645,7 +645,7 @@ and (orientation : landscape) {
       padding: 1rem 4rem 0rem 4rem;
     }
     .myProjects {
-      height: 50vh;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -676,7 +676,7 @@ and (orientation : landscape) {
       left: 46%;
     }
     .myProjects {
-      height: 70vh;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
