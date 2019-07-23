@@ -56,12 +56,18 @@
         <section class="pageHeader" id="top">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 left-head">
+                    <div class="col-lg-7 col-md-12 left-head">
                         <div class="headerText">
                             <div class="top-head-text">
-                                <h1><span>I</span>&nbsp;AM A</h1>
-                                <h1>Web Developer</h1><br>
-                                <div class="hold-div">
+                                <h1 data-aos="fade-in" data-aos-offset="200" data-aos-delay="5"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                data-aos-once="false"><span>I</span>&nbsp;AM A</h1>
+                                <h1 data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                data-aos-once="false">Web Developer</h1><br>
+                                <div class="hold-div" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                data-aos-once="false">
                                     <img src="./images/nice-div.png" alt="text divider for headings" class="top-div" />
                                 </div>
                             </div>
@@ -74,7 +80,7 @@
                         </div> -->
 
                     </div>
-                    <div class="col-lg-6 col-md-12 right-head">
+                    <div class="col-lg-5 col-md-12 right-head">
                     </div>
                 </div>
                 <video muted playsinline webkit-playsinline autoplay loop class="bg-video">
@@ -146,16 +152,17 @@
                                             <span class="progressbar progresscss" id="progress-css"></span>
                                         </div>
                                     </li>
-        
+
                                     <li>
                                         <div class="progressbar-title">
-                                            <h3>JavaScript / jQuery</h3>
-                                            <span class="percent" id="javascript-pourcent"></span>
+                                            <h3>Adobe Illustrator</h3>
+                                            <span class="percent" id="ai-pourcent"></span>
                                         </div>
                                         <div class="bar-container">
-                                            <span class="progressbar progressjs" id="progress-javascript"></span>
+                                            <span class="progressbar progressai" id="progress-ai"></span>
                                         </div>
                                     </li>
+        
                                     <li>
                                         <div class="progressbar-title">
                                             <h3>WordPress</h3>
@@ -170,35 +177,45 @@
                         <div class="col-lg-6 col-md-12">
                             <ul class="skills-bar-container">
                                     <li>
-                                            <div class="progressbar-title">
-                                                <h3>Adobe Illustrator</h3>
-                                                <span class="percent" id="ai-pourcent"></span>
-                                            </div>
-                                            <div class="bar-container">
-                                                <span class="progressbar progressai" id="progress-ai"></span>
-                                            </div>
-                                        </li>
+                                        <div class="progressbar-title">
+                                            <h3>JavaScript / jQuery</h3>
+                                            <span class="percent" id="javascript-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progressjs" id="progress-javascript"></span>
+                                        </div>
+                                    </li>
             
-                                        <li>
-                                            <div class="progressbar-title">
-                                                <h3>MySQL</h3>
-                                                <span class="percent" id="mysql-pourcent"></span>
-                                            </div>
-                                            <div class="bar-container">
-                                                <span class="progressbar progressmysql" id="progress-mysql"></span>
-                                            </div>
-                                        </li>
-            
-                                        <li>
-                                            <div class="progressbar-title">
-                                                <h3>PHP</h3>
-                                                <span class="percent" id="php-pourcent"></span>
-                                            </div>
-                                            <div class="bar-container">
-                                                <span class="progressbar progressphp" id="progress-php"></span>
-                                            </div>
-                                        </li>
-            
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>PHP</h3>
+                                            <span class="percent" id="php-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progressphp" id="progress-php"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>ReactJS</h3>
+                                            <span class="percent" id="react-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progressreact" id="progress-react"></span>
+                                        </div>
+                                    </li>
+        
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>MySQL</h3>
+                                            <span class="percent" id="mysql-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progressmysql" id="progress-mysql"></span>
+                                        </div>
+                                    </li>
+                                    
+
                                 </ul>
                          </div>
                        
@@ -456,21 +473,22 @@
     $(window).on('scroll', function (e) {
         var top = $(window).scrollTop() + $(window).height(),
             isVisible = top > $('#progress-html, #progress-css, #progress-javascript').offset().top;
-        isVisible = top > $(' #progress-ai, #progress-wordpress, #progress-mysql, #progress-php').offset().top;
+        isVisible = top > $(' #progress-ai, #progress-wordpress, #progress-mysql, #progress-php, #progress-react').offset().top;
 
         $('#progress-html, #progress-css, #progress-javascript').toggleClass('animate', isVisible);
-        $('#progress-ai, #progress-wordpress, #progress-mysql, #progress-php').toggleClass('animate', isVisible);
+        $('#progress-ai, #progress-wordpress, #progress-mysql, #progress-php, #progress-react').toggleClass('animate', isVisible);
     });
 </script>
 <script>
     var lang = {
-        "html": "100%",
+        "html": "95%",
         "css": "90%",
+        "ai": "80%",
+        "wordpress": "78%",
         "javascript": "75%",
-        "wordpress": "70%",
-        "ai": "70%",
-        "mysql": "65%",
-        "php": "60%"
+        "php": "75%",
+        "react": "70%",
+        "mysql": "65%"
     };
 
     var multiply = 4;

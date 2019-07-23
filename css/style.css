@@ -451,7 +451,7 @@ footer {
     width: 100%;
     min-width: 300px;
     top: 50%;
-    left: 50%;
+    left: 46%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     list-style:none;
@@ -541,6 +541,12 @@ li{
           -webkit-animation-delay: .7s*7;
           animation-delay: .7s*7;
         }
+        #progress-react.animate{
+          -webkit-animation-name: progress-react;
+          animation-name: progress-react;
+          -webkit-animation-delay: .7s*8;
+          animation-delay: .7s*8;
+        }
   
   .progresshtml{background-color:rebeccapurple;}
   .progresscss{background-color:rebeccapurple;}
@@ -549,30 +555,34 @@ li{
   .progresswp{background-color:rebeccapurple;}
   .progressmysql{background-color:rebeccapurple;}
   .progressphp{background-color:rebeccapurple;}
+  .progressreact{background-color:rebeccapurple;}
   
-  @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
+  @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
   @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+  @-webkit-keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
+  @-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
   @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-  @-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 70%;}}
-  @-webkit-keyframes progress-ai{0%{width: 0%;} 100%{ width: 70%;}}
-  @-webkit-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 60%;}}
-  @-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
+  @-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
+  @-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
+  @-webkit-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
   
-  @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
+  @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
   @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+  @-moz-keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
+  @-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
   @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-  @-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 70%;}}
-  @-moz-keyframes progress-ai{0%{width: 0%;} 100%{ width: 70%;}}
-  @-moz-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 60%;}}
-  @-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
+  @-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
+  @-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
+  @-moz-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
 
-  @keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
+  @keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
   @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+  @keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
+  @keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
   @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-  @keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 70%;}}
-  @keyframes progress-ai{0%{width: 0%;} 100%{ width: 70%;}}
-  @keyframes progress-mysql{0%{width: 0%;} 100%{ width: 60%;}}
-  @keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
+  @keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
+  @keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
+  @keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
 
  
 /*//////RESPONSIVE STYLES//////*/
