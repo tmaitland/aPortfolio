@@ -122,12 +122,17 @@ p {
   text-shadow: 1px 2px 9px #000;
   color: white;
 }
+.topGreeting {
+  font-size: 1.5rem; 
+  text-shadow: none;
+}
 .top-head-text {
   text-shadow: 1px 4px 1px black;
     color: white;
 }
 .mouse-icon {
   position: absolute;
+  /* top: 64%; */
   left: 50%;
   bottom: 40px;
   border: 2px solid #fff;
@@ -675,8 +680,11 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
     .headerText {
       position: relative;
-      top: -25%;
+      /* top: -25%; */
     }
+    .left-head {
+      height: 42.5vh!important;
+  }
 }
 @media only screen 
 and (min-device-width : 1024px) 
@@ -687,8 +695,23 @@ and (orientation : landscape) {
   }
   .headerText {
     position: relative;
-    top: -7%;
-    left: 7%;
+    /* top: -7%; */
+    /* left: 7%; */
+  }
+  .pageHeader {
+    height: 75vh;
+  }
+  .left-head {
+    height: 75vh;
+  }
+  .other-text {
+    padding: 1rem 4rem 0rem 4rem;
+  }
+  .contactMe {
+    height: 80vh;
+  }
+  .contactMe-title h2 {
+    margin-top: 0rem;
   }
 }
 
@@ -702,6 +725,7 @@ and (orientation : landscape) {
       left: 85%;
     }
     .headerText {
+      display: contents;
       position: relative;
       top: -25%;
       left: 7%;
@@ -709,8 +733,11 @@ and (orientation : landscape) {
     .pageHeader {
       height: 36rem;
     }
+    .left-head {
+      height: 42vh;
+    }
     .aboutMe {
-      height: 75vh;
+      height: 64vh;
     }
     .mySkills {
       height: 65vh;
@@ -741,6 +768,9 @@ and (orientation : landscape) {
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: landscape){
     .pageHeader {
+      height: 75vh;
+    }
+    .left-head {
       height: 75vh;
     }
     .aboutMe {
@@ -796,12 +826,16 @@ and (orientation : landscape) {
       height: 27rem;
     }
     .aboutMe {
-      height: auto;
+      height: 70vh;
       background-attachment: initial;
+    }
+
+    .aboutMe .container-fluid {
+      height: 62%;
     }
     .about-title {
       font-size: 3rem;
-      margin-top: 6rem;
+      /* margin-top: 6rem; */
     }
     .aboutMePara p {
       padding: 1rem 1rem 0rem 1rem;
@@ -810,7 +844,7 @@ and (orientation : landscape) {
       line-height: 1.75;
     }
     .mySkills {
-      margin-top: 7rem;
+      margin-top: 2rem;
     }
   .mySkills-title h2 {
       font-size: 3rem;
@@ -837,7 +871,7 @@ and (orientation : landscape) {
     margin-top: 2rem;
   }
   .contactMe {
-    height: auto;
+    height: 70vh;
   }
   .contactMe-title h2 {
     font-size: 3rem;
@@ -875,6 +909,10 @@ and (orientation : landscape) {
       font-size: 2.5rem;
       top: 0rem!important;
     }
+    .topGreeting {
+      font-size: 1rem; 
+      text-shadow: none;
+    }
     .pageHeader {
       height: 30rem;
       background: url(../images/mobile-header.png);
@@ -882,7 +920,10 @@ and (orientation : landscape) {
       background-position: bottom;
     }
     .left-head {
-      height: 92vh;
+      height: 100vh;
+    }
+    .pageHeader {
+      height: 100vh; 
     }
     .bg-video {
       display: none;
@@ -942,6 +983,69 @@ and (orientation : landscape) {
   }
   .footer-row {
     padding: 2rem;
+  }
+}
+
+@media screen 
+and (min-device-width: 500px) 
+and (max-device-width: 767px) {
+  .left-head {
+    height: 100vh;
+  }
+  .pageHeader {
+    height: 100vh;
+  }
+  .aboutMe {
+    height: 45rem;
+    /* background-attachment: initial; */
+  }
+  .aboutMe .container-fluid {
+    height: 100%;
+  }
+}
+@media screen 
+and (min-device-width: 800px) 
+and (max-device-width: 991px) {
+  .left-head {
+    height: 100vh;
+  }
+  .pageHeader {
+    height: 100vh;
+  }
+  .mobile-menu-trigger {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    left: 83%;
+    margin-top: 1.25rem;
+    cursor: pointer;
+  }
+  .aboutMe {
+    height: 47rem;
+  }
+  .aboutMePara p {
+    column-count: auto;
+  }
+  .otherWorkRow {
+    height: auto;
+  }
+  .myProjects {
+    height: auto;
+  }
+  .contactMe {
+    height: auto;
+  }
+  .project-row {
+    height: auto;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  /* .mySkills {
+    margin-top: 6rem;
+  } */
+  .aboutMe {
+    padding-bottom: 9rem;
   }
 }
 
