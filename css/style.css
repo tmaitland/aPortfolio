@@ -513,6 +513,8 @@ h6 {
 footer {
   height: 7rem;
   background: lavender;
+  position: absolute;
+  width: 100%;
 }
 .footer-row {
   display: flex;
